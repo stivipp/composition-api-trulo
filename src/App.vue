@@ -7,9 +7,7 @@
 </template>
 
 <style>
-
 #nav {
   display: none;
 }
-
 </style>

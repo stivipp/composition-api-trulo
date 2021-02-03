@@ -1,26 +1,23 @@
 <template>
-  <div>
-    <p>{{ dude }}</p>
-  </div>
+  <main class="flex h-screen bg-purple-500 lg:bg-gradient-to-r from-red-500 to-pink-400">
+    <div class="sm:flex items-start w-screen px-4 py-10 overflow-x-auto">
+      <List title="BOARD GAMES" />
+      <List title="TOKYO" />
+      <List title="BRAIN THOUGHTS" />
+    </div>
+  </main>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-import {reactive, toRefs, computed } from 'vue'
+import List from '@/components/List.vue'
 
 export default {
+  components: {
+    List
+  },
+
   setup() {
-    const state = reactive({
-      dude: "bulma"
-    })
-
-    return {
-      ...toRefs(state)
-    }
-
+    return {}
   }
- 
-};
+}
 </script>
- 
