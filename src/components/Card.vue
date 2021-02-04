@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
-
 export default {
   props: {
       text: {
@@ -20,11 +18,8 @@ export default {
   },
 
   setup() {
-    const state = reactive({})
 
-    return {
-      ...toRefs(state)
-    }
+    return {}
   }
 }
 </script>

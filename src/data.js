@@ -38,6 +38,10 @@ export const data = [
             {
                 id: 3,
                 text: 'Maju Muad Diba a Leta II a su velmi silny :D.'
+            },
+            {
+                id: 4,
+                text: 'A poznaju tajomstvo MELANCH uz aj oni.'
             }
         ]
       },
@@ -57,6 +61,14 @@ export const data = [
             {
                 id: 3,
                 text: 'Su drzy a nakoniec ich vsetkych zabiju.'
+            },
+            {
+                id: 4,
+                text: '...'
+            },
+            {
+                id: 5,
+                text: 'Nothing interesting... '
             }
         ]
       }
