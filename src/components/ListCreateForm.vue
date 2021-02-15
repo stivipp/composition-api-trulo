@@ -1,0 +1,18 @@
+<template>
+    <form class="flex-shrink-0 sm:w-80 sm:mx-4 sm:mb-0 sm:pr-8 text-gray-800 " action="">
+        <input class="w-full bg-white bg-opacity-40 focus:bg-opacity-100 font-bold placeholder-white focus:placeholder-gray-600 p-2.5 rounded-lg outline-none focus:shadow-xl" type="text" placeholder="Add another list" control-id="ControlID-3">
+    </form>
+
+</template>
+
+
+
+<script>
+export default {
+    setup () {
+        
+
+        return {}
+    }
+}
+</script>
