@@ -9,7 +9,10 @@
         Add card...
     </a>
   
-    <form v-if="formVisible" action="/">
+    <form
+      @submit.prevent="submitForm" 
+      v-if="formVisible" 
+      action="/">
       <textarea class="w-full border-t border-l border-gray-300 p-3 outline-none rounded shadow-inner" rows="3"></textarea>
 
         <div class="flex mt-1 items-center">
@@ -55,10 +58,15 @@ export default {
 
         }
 
+        const submitForm = () => {
+          window.eventBus.emit('new-card-coming', 'stivipp')
+        }
+
         return {
             ...toRefs(state),
             showForm,
-            hideForm
+            hideForm,
+            submitForm
         }
     }
 }
